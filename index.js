@@ -29,12 +29,12 @@ module.exports = function markmob(dispatch) {
 		
 		if(/^<FONT>!mobmarker clear<\/FONT>$/i.test(event.message)) {
 			for (i = 0; i < countarr.length; i++) {
-				despawnthis(countarr[i]),
-				countarr=[],
-				moblocationx = [],
-				moblocationy = [],
-				moblocationz = [];
+				despawnthis(countarr[i]);
 			};
+			countarr=[],
+			moblocationx = [],
+			moblocationy = [],
+			moblocationz = [],
 			message('Mob marker clear attempted');
 		};
 		
@@ -50,8 +50,7 @@ module.exports = function markmob(dispatch) {
 					moblocationy[i] = event.y,
 					moblocationz[i] = event.z,
 					countarr[i]= (player+1+(i)),
-					ind=(i),
-					markthis(countarr[i],ind);
+					markthis(countarr[i],(i));
 					break;
 				};
 			};
@@ -64,7 +63,8 @@ module.exports = function markmob(dispatch) {
 			despawnthis(countarr[ind]),
 			moblocationx.splice(ind,1),
 			moblocationy.splice(ind,1),
-			moblocationz.splice(ind,1);
+			moblocationz.splice(ind,1),
+			countarr.splice(ind,1);
 		};
 	}); 
 	
@@ -74,9 +74,9 @@ module.exports = function markmob(dispatch) {
 			x: moblocationx[inx],
 			y: moblocationy[inx],
 			z: moblocationz[inx],
-			item: 98260, //item id
+			item: 98260, //itemid
 			amount: 1,
-			expiry: 999999,
+			expiry: 300000, //expiry time
 			owners: [{id: player}]
 		});	
 	};
