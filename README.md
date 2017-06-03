@@ -15,6 +15,8 @@ Commands:
 
 This is tested only with blue boxes and they spawn mostly 1 in the viscible vicinity. I tried to make my mods work with >2 mobs in the visible vicinity but it is hard to test this. Report any bugs you have when 2 boxes are in your viscible vicinity, vergos head should spawn at both boxes.
 
+Many thanks to teralove for the work on party death markers for inspiring this module (https://github.com/teralove/party-death-markers)
+
 Spawns at box
 ![screenshot](http://i.imgur.com/pRj1rY6.jpg "Spawn at Bluebox")
 
