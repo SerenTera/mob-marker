@@ -14,3 +14,9 @@ Commands:
 !mobmarker clear-Clears all saved mobs entries and resets the module. Use this if vergos head somehow failed to despawn after killing mob.
 
 This is tested only with blue boxes and they spawn mostly 1 in the viscible vicinity. I tried to make my mods work with >2 mobs in the visible vicinity but it is hard to test this. Report any bugs you have when 2 boxes are in your viscible vicinity, vergos head should spawn at both boxes.
+
+Spawns at box
+![screenshot](http://i.imgur.com/pRj1rY6.jpg "Spawn at Bluebox")
+
+Despawns when box dies
+![screenshot](http://i.imgur.com/IJuFvLk.jpg "Despawns after box dies")
