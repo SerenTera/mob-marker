@@ -74,7 +74,7 @@ module.exports = function markmob(dispatch) {
 			x: moblocationx[inx],
 			y: moblocationy[inx],
 			z: moblocationz[inx],
-			item: 98260,
+			item: 98260, //item id
 			amount: 1,
 			expiry: 999999,
 			owners: [{id: player}]
