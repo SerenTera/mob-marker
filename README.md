@@ -3,7 +3,7 @@ Spawns vergos head as indicator on mobs (bluebox)
 
 A Tera Proxy module that spawns vergos head as an indicator on mobs(blueboxes,caimans etc). Works best when mob is stationary, but could be used for mongos in future with some modifications.
 
-The indicator is spawned at the location of the mob and automatically despawns when the mob is killed/ the mob goes out of your sight(it will respawn once it enters your sight again). If somehow theres any bug in despawning the vergos head, there is a debug command available to reset the module. Module is enabled by default
+The indicator is spawned at the location of the mob and automatically despawns when the mob is killed/ the mob goes out of your sight(it will respawn once it enters your sight again). If somehow theres any bug in despawning the vergos head, there is a debug command available to reset the module. Vergos head should despawn after 5mins if box isnt killed. Module is enabled by default.
 
 Commands:
 
